@@ -1,7 +1,7 @@
 {
-    "rulesDirectory": [
-      "node_modules/codelyzer"
-    ],
+//    "rulesDirectory": [
+//      "node_modules/codelyzer"
+//    ],
     "rules": {
       "arrow-return-shorthand": true,
       "callable-types": true,
@@ -136,4 +136,3 @@
       "directive-class-suffix": true
     }
   }
-  
