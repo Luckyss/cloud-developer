@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: luckyz/reverseproxy 
+  backend_user:
+    build:
+      context: ../udacity-c2-user-microservice
+    image: luckyz/udacity-restapi-user
+  backend_feed:
+    build:
+      context: ../udacity-c2-feed-microservice  
+    image: luckyz/udacity-restapi-feed
+  frontend:
+    build:
+      context: ../udacity-c2-frontend  
+    image: luckyz/udacity-frontend:local
